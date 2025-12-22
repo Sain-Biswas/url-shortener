@@ -1,28 +1,33 @@
-# dependencies (bun install)
+# Dependencies (bun install)
 node_modules
+.pnp
+.pnp.js
 
-# output
+# Output
 out
+build
 dist
+dist-ssr
 *.tgz
 
-# code coverage
+# Turbo
+.turbo
+
+# Code Coverage
 coverage
 *.lcov
 
-# logs
+# Logs
 logs
 _.log
 report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
-# dotenv environment variable files
+# Dotenv Environment Variable Files
 .env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+.env.*
+!.env.sample
 
-# caches
+# Caches
 .eslintcache
 .cache
 *.tsbuildinfo
@@ -30,5 +35,22 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 # IntelliJ based IDEs
 .idea
 
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
 # Finder (MacOS) folder config
 .DS_Store
+
+# Tanstack
+.nitro
+.tanstack
+
+# Database
+*.db
+.drizzle
+
+# Miscellaneous
+*.pem
+*.local
