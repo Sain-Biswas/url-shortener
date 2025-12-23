@@ -4,7 +4,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun run --bun --watch src/development.ts",
-    "build": "bun build src/index.ts --production --minify --outfile=build/index.js"
+    "build": "bun build src/index.ts --production --minify --outfile=dist/index.js"
   },
   "dependencies": {
     "elysia": "^1.4.19"

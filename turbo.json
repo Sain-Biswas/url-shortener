@@ -1,0 +1,37 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+
+  "ui": "tui",
+
+  "globalEnv": ["NODE_ENV"],
+
+  "tasks": {
+    "build": {
+      "inputs": [
+        "$TURBO_DEFAULTS$",
+        ".env",
+        ".env.local",
+        ".env.production",
+        "src/**"
+      ],
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+
+    "dev": {
+      "inputs": [
+        "$TURBO_DEFAULTS$",
+        ".env",
+        ".env.local",
+        ".env.production"
+      ],
+      "cache": false,
+      "persistent": true
+    },
+
+    "lint": {
+      "dependsOn": ["^lint"],
+      "inputs": ["src/**"]
+    }
+  }
+}
