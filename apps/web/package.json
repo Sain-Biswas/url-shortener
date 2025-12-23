@@ -4,10 +4,10 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "bunx --bun vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "lint": "bunx --bun eslint --fix .",
+    "preview": "bunx --bun vite preview"
   },
   "dependencies": {
     "@base-ui/react": "^1.0.0",
