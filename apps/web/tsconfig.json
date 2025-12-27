@@ -16,6 +16,7 @@
     "verbatimModuleSyntax": true,
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
+    "allowJs": true,
 
     /* Linting */
     "strict": true,

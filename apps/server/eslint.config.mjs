@@ -1,11 +1,9 @@
+import { elysiaEslintConfig, typescriptParser } from "@tiny/eslint";
 import { defineConfig, globalIgnores } from "eslint/config";
-
-import { reactEslintConfig, typescriptParser } from "@tiny/eslint";
 
 export default defineConfig(
   globalIgnores(["dist"]),
-
-  reactEslintConfig,
+  elysiaEslintConfig,
 
   {
     files: ["**/*.{ts,tsx,cts,mts,js,jsx,mjs,cjs}"],
