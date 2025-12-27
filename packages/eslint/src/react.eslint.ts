@@ -27,7 +27,7 @@ export const reactEslintConfig: Config[] = defineConfig(
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-expect-error
     ...pluginReact.configs.flat.recommended,
-    ...pluginReact.configs.flat["jsx-runtime"],
+    ...pluginReact.configs.flat["jsx-runtime"]
   },
 
   {
@@ -36,19 +36,19 @@ export const reactEslintConfig: Config[] = defineConfig(
       globals: {
         ...globals.browser,
         ...globals.builtin,
-        ...globals.devtools,
-      },
+        ...globals.devtools
+      }
     },
 
     rules: {
       "@eslint-react/naming-convention/filename": [
         "error",
-        { rule: "kebab-case" },
+        { rule: "kebab-case" }
       ],
       "@eslint-react/naming-convention/component-name": [
         "error",
-        { rule: "PascalCase", allowAllCaps: true },
-      ],
-    },
-  },
+        { rule: "PascalCase", allowAllCaps: true }
+      ]
+    }
+  }
 );

@@ -13,18 +13,18 @@ export const drizzleEslintConfig: Config[] = defineConfig(
 
     plugins: {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      drizzle: pluginDrizzle,
+      drizzle: pluginDrizzle
     },
 
     rules: {
       "drizzle/enforce-delete-with-where": [
         "error",
-        { drizzleObjectName: ["database", "ctx.database"] },
+        { drizzleObjectName: ["database", "ctx.database"] }
       ],
       "drizzle/enforce-update-with-where": [
         "error",
-        { drizzleObjectName: ["database", "ctx.database"] },
-      ],
-    },
-  },
+        { drizzleObjectName: ["database", "ctx.database"] }
+      ]
+    }
+  }
 );

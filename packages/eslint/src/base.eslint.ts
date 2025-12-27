@@ -22,18 +22,18 @@ export const baseEslintConfig: Config[] = defineConfig(
       "@typescript-eslint/consistent-type-definitions": "off",
       "@typescript-eslint/consistent-type-imports": [
         "warn",
-        { prefer: "type-imports", fixStyle: "inline-type-imports" },
+        { prefer: "type-imports", fixStyle: "inline-type-imports" }
       ],
       "@typescript-eslint/no-unused-vars": [
         "warn",
-        { argsIgnorePattern: "^_" },
+        { argsIgnorePattern: "^_" }
       ],
       "@typescript-eslint/require-await": "off",
       "@typescript-eslint/no-misused-promises": [
         "error",
-        { checksVoidReturn: { attributes: false } },
+        { checksVoidReturn: { attributes: false } }
       ],
-      "@typescript-eslint/restrict-template-expressions": "off",
-    },
-  },
+      "@typescript-eslint/restrict-template-expressions": "off"
+    }
+  }
 );

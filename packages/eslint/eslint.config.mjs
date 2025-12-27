@@ -12,8 +12,8 @@ export default defineConfig(
       parser: typescriptParser,
       parserOptions: {
         projectService: true,
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
-  },
+        tsconfigRootDir: import.meta.dirname
+      }
+    }
+  }
 );

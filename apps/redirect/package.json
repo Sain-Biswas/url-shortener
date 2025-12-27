@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun run --bun --watch src/development.ts",
     "build": "tsdown",
-    "lint": "bunx --bun eslint --fix src"
+    "lint": "bunx --bun eslint --fix src",
+    "format": "prettier --write src"
   },
   "dependencies": {
     "elysia": "^1.4.19"
@@ -15,6 +16,7 @@
     "@tiny/eslint": "workspace:*",
     "bun-types": "^1.3.5",
     "eslint": "^9.39.2",
+    "prettier": "^3.7.4",
     "tsdown": "^0.18.2"
   }
 }

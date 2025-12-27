@@ -13,8 +13,8 @@ export const elysiaEslintConfig: Config[] = defineConfig(
       globals: {
         ...globals.node,
         ...globals.serviceworker,
-        ...globals.builtin,
-      },
-    },
-  },
+        ...globals.builtin
+      }
+    }
+  }
 );

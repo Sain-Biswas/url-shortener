@@ -32,6 +32,10 @@
     "lint": {
       "dependsOn": ["^lint"],
       "inputs": ["src/**"]
+    },
+
+    "format": {
+      "cache": false
     }
   }
 }
