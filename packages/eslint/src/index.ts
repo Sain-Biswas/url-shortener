@@ -1,5 +1,8 @@
-export function fn() {
-  return 'Hello, tsdown!'
-}
+import pluginTypescript from "typescript-eslint";
 
-console.log("Hello")
+export const typescriptParser = pluginTypescript.parser;
+
+export { baseEslintConfig } from "~/base.eslint";
+export { drizzleEslintConfig } from "~/drizzle.eslint";
+export { elysiaEslintConfig } from "~/elysia.eslint";
+export { reactEslintConfig } from "~/react.eslint";
