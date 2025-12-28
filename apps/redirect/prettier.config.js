@@ -11,7 +11,7 @@ const configuration = {
   htmlWhitespaceSensitivity: "strict",
   singleQuote: false,
   singleAttributePerLine: true,
-  trailingComma: "none",
+  trailingComma: "none"
 };
 
 export default configuration;
