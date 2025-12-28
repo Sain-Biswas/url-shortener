@@ -5,7 +5,10 @@ const environmentVariableSchema = z.object({
   DATABASE_AUTH_TOKEN: z.string(),
   NEXT_PUBLIC_VERCEL_ENV: z
     .enum(["production", "development", "preview"])
-    .default("development")
+    .default("development"),
+
+  FRONTEND_BASE_URL: z.url(),
+  SERVER_BASE_URL: z.url()
 });
 
 const environmentVariables = environmentVariableSchema.safeParse(process.env);
