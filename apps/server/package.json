@@ -10,9 +10,11 @@
     "format": "prettier --write src"
   },
   "dependencies": {
-    "elysia": "^1.4.19"
+    "elysia": "^1.4.19",
+    "zod": "^4.2.1"
   },
   "devDependencies": {
+    "@tiny/drizzle-orm": "workspace:*",
     "@tiny/eslint": "workspace:*",
     "bun-types": "^1.3.5",
     "eslint": "^9.39.2",
